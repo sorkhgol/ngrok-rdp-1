@@ -11,7 +11,7 @@ jobs:
 
     - name: Download ngrok
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/sorkhgol/ngrok-rdp-1/refs/heads/main/resources/ngrok.zip -OutFile ngrok.zip
+        Invoke-WebRequest 'https://raw.githubusercontent.com/sorkhgol/ngrok-rdp-1/refs/heads/main/resources/ngrok.zip' -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/sorkhgol/ngrok-rdp-1/refs/heads/main/resources/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/sorkhgol/ngrok-rdp-1/refs/heads/main/resources/winrar.exe -OutFile winrar.exe
 
